@@ -24,7 +24,8 @@
     "webpack-dev-server": "^2.5.1"
   },
   "scripts": {
-    "build": "rimraf dist && webpack"
+    "build": "rimraf dist && webpack -p",
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",

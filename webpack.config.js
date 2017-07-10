@@ -1,11 +1,14 @@
 'use strict';
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var path = require('path');
 
 module.exports = {
   entry: ['./src/scripts/app.js', './src/scss/main.scss'],
   output: {
-    filename: 'dist/js/bundle.js'
+		publicPath: 'dist',
+		path: path.resolve(__dirname, 'dist'),
+    filename: 'js/bundle.js'
   },
   module: {
     rules: [
@@ -19,7 +22,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin({ // define where to save the file
+    new ExtractTextPlugin({
       filename: 'dist/css/[name].bundle.css',
       allChunks: true,
     }),
