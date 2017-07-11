@@ -21,9 +21,8 @@
 				<div class="product-box product-box--center" style="zoom: 1">
 					<div v-bind:class="'product-box-side gradient-vertical-' + gradient" >
 						<div class="product-box-side-content">
-							<br/>
 							<span style="font-size: 24px" v-if="flagSideSelected" v-bind:class="'flag-icon flag-icon-' + flag"></span>
-							<h2 v-if="titleVerticalSelected">{{ titleVertical.toUpperCase().split('').join('\n') }}</h2>
+							<h2 v-if="titleVerticalSelected" class="vertical-text">{{ titleVertical }}</h2>
 						</div>
 					</div>
 					<div v-bind:class="'product-box-front gradient-radial-' + gradient">

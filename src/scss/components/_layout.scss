@@ -1,5 +1,5 @@
 body {
-	font-family: 'Anonymous Pro', monospace;
+	font-family: 'Monaco', sans-serif;
 }
 
 h1 {
@@ -10,3 +10,9 @@ h1 {
 	max-width: 980px;
 	margin: 0 auto;
 }	
+
+.vertical-text {
+	transform: rotate(90deg) translate(45px, 0);
+	letter-spacing: 2px;
+	white-space: nowrap;
+}

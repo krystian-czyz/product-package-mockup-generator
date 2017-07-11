@@ -2,11 +2,11 @@ var package = new Vue({
   el: '#app-package',
   data: {
 		titleSelected: true,
-    title: 'Super product',
+    title: 'Język angielski',
 		titleFontSize: 36,
 		titleVerticalSelected: true,
-    titleVertical: 'product',
-		flagSelected: true,
+    titleVertical: '1000 słów',
+		flagSelected: false,
 		flagSideSelected: true,
     flag: 'gb',
 		flagMarginTop: 123,
@@ -16,10 +16,20 @@ var package = new Vue({
     imageMarginLeft: -19,
     imageWidth: 220,
     imageOptions: [
-      { text: 'Woman', value: 'img/woman-1.png'},
-      { text: 'Man', value: 'img/man-1.png'}
+      { text: 'Woman 1', value: 'img/woman-1.png'},
+      { text: 'Woman 2', value: 'img/woman-2.png'},
+      { text: 'Woman 3', value: 'img/woman-3.png'},
+      { text: 'Woman 4', value: 'img/woman-4.png'},
+      { text: 'Woman 5', value: 'img/woman-5.png'},
+      { text: 'Man 1', value: 'img/man-1.png'},
+      { text: 'Man 2', value: 'img/man-2.png'},
+      { text: 'Man 3', value: 'img/man-3.png'},
+      { text: 'Man 4', value: 'img/man-4.png'},
+      { text: 'Man 5', value: 'img/man-5.png'},
+      { text: 'Man 6', value: 'img/man-6.png'},
+      { text: 'Man 7', value: 'img/man-7.png'}
     ],
-    gradient: 'yellow',
+    gradient: 'gradient2',
     gradientOptions: [
       { text: 'Yellow', value: 'yellow'},
       { text: 'Gradient1', value: 'gradient1'},
