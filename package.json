@@ -9,6 +9,8 @@
     "webpack": "^3.1.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "browser-sync-webpack-plugin": "^1.2.0",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
@@ -25,12 +27,9 @@
   },
   "scripts": {
     "build": "rimraf dist && webpack -p",
-    "dev": "webpack-dev-server"
+    "dev": "webpack --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/krystian-czyz/product-package-mockup-generator.git"
-  },
+  "repository": "git+https://github.com/krystian-czyz/product-package-mockup-generator.git",
   "author": "krystian.czyz@gmail.com",
   "license": "MIT",
   "bugs": {

@@ -1,0 +1,62 @@
+Arguments: 
+  C:\Program Files (x86)\Nodist\v-x64\7.2.1\node.exe C:\Program Files (x86)\Nodist\bin\node_modules\yarn\bin\yarn.js add --dev browser-sync-webpack-plugin
+
+PATH: 
+  C:\Program Files\ConEmu\ConEmu\Scripts;C:\Program Files\ConEmu;C:\Program Files\ConEmu\ConEmu;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\OpenVPN\bin;C:\Program Files\PuTTY\;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Nodist\bin;C:\Program Files (x86)\Common Files\Adobe\AGL;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\OpenVPN\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\PuTTY\;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;;C:\Users\Krystian.Czyz\AppData\Local\Microsoft\WindowsApps;C:\Users\Krystian.Czyz\AppData\Roaming\npm;C:\Users\Krystian.Czyz\AppData\Local\Yarn\bin
+
+Yarn version: 
+  0.24.5
+
+Node version: 
+  7.2.1
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "product-package-mockup-generator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+      "node-sass": "^4.5.3",
+      "sass-loader": "^6.0.6",
+      "webpack": "^3.1.0"
+    },
+    "devDependencies": {
+      "copy-webpack-plugin": "^4.0.1",
+      "css-loader": "^0.28.4",
+      "extract-text-webpack-plugin": "^2.1.2",
+      "file-loader": "^0.11.2",
+      "html-webpack-plugin": "^2.29.0",
+      "node-sass": "^4.5.3",
+      "postcss-loader": "^2.0.6",
+      "rimraf": "^2.6.1",
+      "sass-loader": "^6.0.6",
+      "style-loader": "^0.18.2",
+      "url-loader": "^0.5.9",
+      "webpack": "^3.1.0",
+      "webpack-dev-server": "^2.5.1"
+    },
+    "scripts": {
+      "build": "rimraf dist && webpack -p",
+      "dev": "webpack-dev-server"
+    },
+    "repository": "git+https://github.com/krystian-czyz/product-package-mockup-generator.git",
+    "author": "krystian.czyz@gmail.com",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/krystian-czyz/product-package-mockup-generator/issues"
+    },
+    "homepage": "https://github.com/krystian-czyz/product-package-mockup-generator#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Krystian.Czyz\product-package-mockup-generator\node_modules\node-sass\vendor\win32-x64-51\binding.node'

@@ -1,6 +1,7 @@
 'use strict';
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var path = require('path');
 
 module.exports = {
@@ -10,6 +11,7 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
     filename: 'js/bundle.js'
   },
+	watch: true,
   module: {
     rules: [
 		  {
@@ -23,12 +25,17 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: 'dist/css/[name].bundle.css',
+      filename: 'css/[name].bundle.css',
       allChunks: true,
     }),
 		new CopyWebpackPlugin([
-			{ from: 'src/index.html', to: 'dist/index.html' },
-			{ from: 'src/img', to: 'dist/img' }
+			{ from: 'src/index.html', to: 'index.html' },
+			{ from: 'src/img', to: 'img' }
 		]),
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3000,
+      server: { baseDir: ['dist'] }
+    })
   ],
 };

@@ -1,9 +1,13 @@
 var package = new Vue({
   el: '#app-package',
   data: {
-    title: 'Learn Language',
-    titleVertical: 'deutsch',
-    flag: 'de',
+		titleSelected: true,
+    title: 'Super product',
+		titleVerticalSelected: true,
+    titleVertical: 'product',
+		flagsSelected: true,
+    flag: 'gb',
+		imageSelected: true,
     image: 'img/image-1.png',
     imageMarginTop: 9,
     imageMarginLeft: 4,
