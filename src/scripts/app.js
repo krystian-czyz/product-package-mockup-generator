@@ -3,24 +3,28 @@ var package = new Vue({
   data: {
 		titleSelected: true,
     title: 'Super product',
+		titleFontSize: 36,
 		titleVerticalSelected: true,
     titleVertical: 'product',
-		flagsSelected: true,
+		flagSelected: true,
+		flagSideSelected: true,
     flag: 'gb',
+		flagMarginTop: 123,
 		imageSelected: true,
-    image: 'img/image-1.png',
-    imageMarginTop: 9,
-    imageMarginLeft: 4,
-    imageWidth: 200,
+    image: 'img/woman-1.png',
+    imageMarginTop: -26,
+    imageMarginLeft: -19,
+    imageWidth: 220,
     imageOptions: [
-      { text: 'Woman 1', value: 'img/image-1.png'},
-      { text: 'Woman 2', value: 'img/image-3.png'},
-      { text: 'Man', value: 'img/image-2.png'}
+      { text: 'Woman', value: 'img/woman-1.png'},
+      { text: 'Man', value: 'img/man-1.png'}
     ],
     gradient: 'yellow',
     gradientOptions: [
       { text: 'Yellow', value: 'yellow'},
-      { text: 'Purple', value: 'purple'}
+      { text: 'Violet', value: 'violet'},
+      { text: 'Red', value: 'red'},
+      { text: 'Clot', value: 'clot'}
     ]
   },
   methods: {
