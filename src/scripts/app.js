@@ -22,9 +22,11 @@ var package = new Vue({
     gradient: 'yellow',
     gradientOptions: [
       { text: 'Yellow', value: 'yellow'},
-      { text: 'Violet', value: 'violet'},
-      { text: 'Red', value: 'red'},
-      { text: 'Clot', value: 'clot'}
+      { text: 'Gradient1', value: 'gradient1'},
+      { text: 'Gradient2', value: 'gradient2'},
+      { text: 'Gradient3', value: 'gradient3'},
+      { text: 'Gradient4', value: 'gradient4'},
+      { text: 'Gradient5', value: 'gradient5'}
     ]
   },
   methods: {

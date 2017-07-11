@@ -1,35 +1,7 @@
-.gradient-vertical {
-	&-yellow {
-		background: linear-gradient(to bottom, #ffce00 0%,#d37b17 100%);
-	}
+@include gradient-box(yellow, #ffce00, #d37b17);
+@include gradient-box(gradient1, #f00, #600f0f);
+@include gradient-box(gradient2, #337ab7, #264967);
+@include gradient-box(gradient3, #c33764, #73273f);
+@include gradient-box(gradient4, #45b649, #2b692d);
+@include gradient-box(gradient5, #ff6a00, #ba540a);
 
-	&-violet {
-		background: linear-gradient(to bottom, #cb60b3 0%,#ad1283 50%,#de47ac 100%); 
-	}
-
-	&-red {
-	 background: linear-gradient(to right, rgb(203, 53, 107), rgb(189, 63, 50));
-	}
-
-	&-clot {
-		background: linear-gradient(to bottom, rgb(100, 43, 115), rgb(198, 66, 110));
-	}
-}
-
-.gradient-radial {
-	&-yellow {
-		background: radial-gradient(ellipse at center, #ffce00 0%,#d37b17 100%);
-	}
-
-	&-violet {
-		@extend .gradient-vertical-violet;
-	}
-
-	&-red {
-		@extend .gradient-vertical-red;
-	}
-
-	&-clot {
-		@extend .gradient-vertical-clot;
-	}
-}

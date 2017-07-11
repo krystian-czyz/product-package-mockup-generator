@@ -1,0 +1,9 @@
+@mixin gradient-box($name, $color1, $color2) {
+	.gradient-vertical-#{$name} {
+		background: linear-gradient(to bottom, $color1 0%,$color2 100%);
+	}	
+
+	.gradient-radial-#{$name} {
+		background: radial-gradient(ellipse at center, $color1 9%,$color2 95%);
+	}
+}
